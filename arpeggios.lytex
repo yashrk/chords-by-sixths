@@ -1,0 +1,91 @@
+\documentclass{article}
+% Russification
+\usepackage[utf8]{inputenc}
+\usepackage[main=russian,english]{babel}
+
+% Guitar fretboard plots
+\usepackage{gchords}
+
+% Two columns on one-column pages
+\usepackage{multicol}
+
+% Blocks rotation
+\usepackage{rotating}
+
+% Nice font
+\usepackage{CormorantGaramond}
+
+\begin{document}
+\title{\textbf{Арпеджио секстами с промежуточным звеном}}
+\date{}
+\pagenumbering{gobble}
+
+\maketitle
+
+\section*{Am}
+
+\begin{multicols}{2}
+  \begin{lilypond}[quote,fragment,staffsize=26]
+    \include "deutsch.ly"
+    \version "2.24.3"
+
+    \relative c'' {
+      <c a'> <d h'> <e c'>
+    }
+  \end{lilypond}
+
+  \begin{turn}{90}
+    \chords{
+      \mediumchords
+      \def\numfrets{12}
+      \chord{}{x,x,x,p5p7p9,x,p5p7p8}{}
+    }
+  \end{turn}
+\end{multicols}
+
+\section*{Hm\textsuperscript{7$\flat$5}}
+
+\begin{multicols}{2}
+
+  \begin{lilypond}[quote,fragment,staffsize=26]
+    \include "deutsch.ly"
+    \version "2.24.3"
+
+    \relative c'' {
+      <d h'> <e c'> <f d'>
+    }
+  \end{lilypond}
+
+  \begin{turn}{90}
+    \chords{
+      \mediumchords
+      \def\numfrets{12}
+      \chord{}{x,x,x,p7p9p{10},x,p7p8p{10}}{}
+    }
+  \end{turn}
+\end{multicols}
+
+
+\section*{E\textsuperscript{7}}
+
+\begin{multicols}{2}
+
+  \begin{lilypond}[quote,fragment,staffsize=26]
+    \include "deutsch.ly"
+    \version "2.24.3"
+
+    \relative c'' {
+      <h gis'> <c a'> <d h'>
+    }
+  \end{lilypond}
+
+  \begin{turn}{90}
+    \chords{
+      \mediumchords
+      \def\numfrets{12}
+      \chord{}{x,x,x,p4p5p7,x,p4p5p7}{}
+    }
+  \end{turn}
+\end{multicols}
+
+\end{document}
