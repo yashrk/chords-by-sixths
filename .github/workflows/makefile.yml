@@ -1,0 +1,35 @@
+name: Makefile CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Build LaTeX file
+      uses: docker://ykarikos/lilypond-book
+      with:
+        args: lilypond-book --pdf arpeggios.lytex
+
+    - name: Build PDF file
+      uses: docker://cristiangreco/pdflatex
+      with:
+        args: pdflatex arpeggios.tex
+
+    - name: Archive artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: PDF file
+        path: arpeggios.pdf
