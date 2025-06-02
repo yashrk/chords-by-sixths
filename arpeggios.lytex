@@ -114,6 +114,38 @@
 
 \subsection*{Что здесь происходит}
 
+Сексты, из которых состоят именно Am, Dm и E, расположены не очень удобно. Но мы можем воспользоваться гармоническими заменами. Внимательно посмотрим на минорное трезвучие от ре (Dm) и полууменьшённый септаккорд от си (Hm\textsuperscript{7$\flat$5}):
+\begin{lilypond}[quote,fragment,staffsize=26]
+  \include "deutsch.ly"
+  \version "2.24.3"
+
+  <<
+  \new ChordNames { \chordmode {d4:m h:m7.5-} }
+  \new Staff {
+    \relative c'' {
+      <d f a> <h d f a>
+    }
+  }
+  >>
+\end{lilypond}
+
+Dm целиком входит в состав Hm\textsuperscript{7$\flat$5}. Поэтому мы можем смело играть Hm\textsuperscript{7$\flat$5} везде, где нам встречается Dm.
+
+То же самое мы видим в случае мажорного трезвучия от ми (E) и малого мажорного септаккорда от ми (E\textsuperscript{7}):
+\begin{lilypond}[quote,fragment,staffsize=26]
+  \include "deutsch.ly"
+  \version "2.24.3"
+
+  <<
+  \new ChordNames { \chordmode {e4 e:7} }
+  \new Staff {
+    \relative c' {
+      <e gis h> <e gis h d>
+    }
+  }
+  >>
+\end{lilypond}
+
 Мы можем заменить Dm на Hm\textsuperscript{7$\flat$5}, а E на E\textsuperscript{7}. После этого некоторые сексты из состава новых аккордов оказываются совсем рядом.
 
 \end{document}
