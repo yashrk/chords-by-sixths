@@ -1,4 +1,4 @@
-\documentclass[twoside]{report}
+\documentclass[twoside,14pt]{extreport}
 % Russification
 \usepackage[utf8]{inputenc}
 \usepackage[main=russian,english]{babel}
@@ -24,6 +24,15 @@
 \fancyhead[LE]{\rightmark}
 \fancyhead[RE, LO]{\thepage}
 
+% Section titles
+\usepackage{titlesec}
+
+\titleformat{\chapter}{\huge\bfseries}{\thechapter. }{0pt}{\raggedright}
+\titlespacing{\chapter}{0pt}{1\baselineskip}{2\baselineskip}
+
+\titleformat{\section}{\Large\bfseries}{\thesection. }{0pt}{\raggedright}
+\titlespacing{\section}{0pt}{1\baselineskip}{2\baselineskip}
+
 \begin{document}
 \title{\textbf{Как обыгрывать аккорды «скользящими секстами»}}
 \date{}
@@ -31,10 +40,9 @@
 \maketitle
 
 \tableofcontents
+\thispagestyle{empty}
 
 \chapter{Популярные гармонические последовательности}
-
-\pagebreak
 
 \section{Быстрое решение для «трёх блатных аккордов»}
 
