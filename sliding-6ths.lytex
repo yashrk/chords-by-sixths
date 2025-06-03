@@ -120,12 +120,12 @@
   \version "2.24.3"
 
   <<
-  \new ChordNames { \chordmode {d4:m h:m7.5-} }
-  \new Staff {
-    \relative c'' {
-      <d f a> <h d f a>
+    \new ChordNames { \chordmode {d4:m h:m7.5-} }
+    \new Staff {
+      \relative c'' {
+        <d f a> <h d f a>
+      }
     }
-  }
   >>
 \end{lilypond}
 
