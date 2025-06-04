@@ -27,11 +27,15 @@
 % Section titles
 \usepackage{titlesec}
 
-\titleformat{\chapter}{\huge\bfseries}{\thechapter. }{0pt}{\raggedright}
-\titlespacing{\chapter}{0pt}{1\baselineskip}{2\baselineskip}
+\titleformat{\chapter}{\Large\bfseries}{\thechapter. }{0pt}{\raggedright}
+\titlespacing{\chapter}{0pt}{-30pt}{1\baselineskip}
 
-\titleformat{\section}{\Large\bfseries}{\thesection. }{0pt}{\raggedright}
-\titlespacing{\section}{0pt}{1\baselineskip}{2\baselineskip}
+\titleformat{\section}{\large\bfseries}{\thesection. }{0pt}{\raggedright}
+\titlespacing{\section}{0pt}{-30pt}{1\baselineskip}
+
+% To patch standard commands
+\usepackage{etoolbox}
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
 
 \begin{document}
 \title{\textbf{Как обыгрывать аккорды «скользящими секстами»}}
@@ -147,5 +151,9 @@ Dm целиком входит в состав Hm\textsuperscript{7$\flat$5}. П
 \end{lilypond}
 
 Мы можем заменить Dm на Hm\textsuperscript{7$\flat$5}, а E на E\textsuperscript{7}. После этого некоторые сексты из состава новых аккордов оказываются совсем рядом.
+
+\chapter{Трезвучия популярных тональностей скользящими секстами}
+
+\section{a-moll}
 
 \end{document}
