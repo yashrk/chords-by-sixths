@@ -98,6 +98,7 @@
 
 \subsection*{E\textsuperscript{7}}
 \begin{multicols}{2}
+
   \begin{lilypond}[quote,fragment,staffsize=26]
     \include "deutsch.ly"
     \version "2.22.1"
@@ -114,6 +115,7 @@
       \chord{}{x,x,x,p4p5p7,x,p4p5p7}{}
     }
   \end{turn}
+
 \end{multicols}
 
 \subsection*{Что здесь происходит}
@@ -157,6 +159,7 @@ Dm целиком входит в состав Hm\textsuperscript{7$\flat$5}. П
                             "PT Mono"
                              (/ myStaffSize 22)))
   }
+
   <<
     \new ChordNames { \chordmode {e4 e:7} }
     \new Staff {
@@ -194,6 +197,7 @@ Dm целиком входит в состав Hm\textsuperscript{7$\flat$5}. П
       \chord{}{x,x,x,p5p7p9,x,p5p7p8}{}
     }
   \end{turn}
+
 \end{multicols}
 
 \subsection*{Hm\textsuperscript{$\flat$5}}
@@ -215,6 +219,7 @@ Dm целиком входит в состав Hm\textsuperscript{7$\flat$5}. П
       \chord{}{x,x,x,p7p9p{10},x,p7p8p{10}}{}
     }
   \end{turn}
+
 \end{multicols}
 
 \subsection*{C}
@@ -236,6 +241,7 @@ Dm целиком входит в состав Hm\textsuperscript{7$\flat$5}. П
       \chord{}{x,x,x,p9p{10}p{12},x,p8p{10}p{12}}{}
     }
   \end{turn}
+
 \end{multicols}
 
 \subsection*{Dm}
@@ -249,6 +255,7 @@ Dm целиком входит в состав Hm\textsuperscript{7$\flat$5}. П
       <f d'> <g e'> <a f'>
     }
   \end{lilypond}
+
   \begin{turn}{90}
     \chords{
       \mediumchords
@@ -256,10 +263,12 @@ Dm целиком входит в состав Hm\textsuperscript{7$\flat$5}. П
       \chord{}{x,x,x,p{10}p{12}p{14},x,p{10}p{12}p{13}}{}
     }
   \end{turn}
+
 \end{multicols}
 
 \subsection*{E}
 \begin{multicols}{2}
+
   \begin{lilypond}[quote,fragment,staffsize=26]
     \include "deutsch.ly"
     \version "2.22.1"
@@ -268,6 +277,7 @@ Dm целиком входит в состав Hm\textsuperscript{7$\flat$5}. П
       <gis e'> <a f'> <h gis'>
     }
   \end{lilypond}
+
   \begin{turn}{90}
     \chords{
       \mediumchords
@@ -275,9 +285,8 @@ Dm целиком входит в состав Hm\textsuperscript{7$\flat$5}. П
       \chord{}{x,x,x,p1p2p4,x,p0p1p4}{}
     }
   \end{turn}
+
 \end{multicols}
-
-
 
 \subsection*{Em}
 \begin{multicols}{2}
@@ -290,6 +299,7 @@ Dm целиком входит в состав Hm\textsuperscript{7$\flat$5}. П
       <g e'> <a f'> <h g'>
     }
   \end{lilypond}
+
   \begin{turn}{90}
     \chords{
       \mediumchords
@@ -297,6 +307,7 @@ Dm целиком входит в состав Hm\textsuperscript{7$\flat$5}. П
       \chord{}{x,x,x,p0p2p4,x,p0p1p3}{}
     }
   \end{turn}
+
 \end{multicols}
 
 \subsection*{F}
@@ -318,6 +329,7 @@ Dm целиком входит в состав Hm\textsuperscript{7$\flat$5}. П
       \chord{}{x,x,x,p2p4p5,x,p1p3p5}{}
     }
   \end{turn}
+
 \end{multicols}
 
 \subsection*{G}
@@ -339,5 +351,6 @@ Dm целиком входит в состав Hm\textsuperscript{7$\flat$5}. П
       \chord{}{x,x,x,p4p5p7,x,p3p5p7}{}
     }
   \end{turn}
+
 \end{multicols}
 \end{document}
