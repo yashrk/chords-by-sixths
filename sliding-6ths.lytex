@@ -25,7 +25,7 @@
 \fancyhead[RE, LO]{\thepage}
 
 % Section titles
-\usepackage{titlesec}
+\usepackage[nobottomtitles]{titlesec}
 
 \titleformat{\chapter}{\Large\bfseries}{\thechapter. }{0pt}{\raggedright}
 \titlespacing{\chapter}{0pt}{-30pt}{1\baselineskip}
