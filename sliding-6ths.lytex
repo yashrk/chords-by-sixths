@@ -56,7 +56,7 @@
 
   \begin{lilypond}[quote,fragment,staffsize=26]
     \include "deutsch.ly"
-    \version "2.24.3"
+    \version "2.22.1"
 
     \relative c'' {
       <c a'> <d h'> <e c'>
@@ -79,7 +79,7 @@
 
   \begin{lilypond}[quote,fragment,staffsize=26]
     \include "deutsch.ly"
-    \version "2.24.3"
+    \version "2.22.1"
 
     \relative c'' {
       <d h'> <e c'> <f d'>
@@ -100,7 +100,7 @@
 \begin{multicols}{2}
   \begin{lilypond}[quote,fragment,staffsize=26]
     \include "deutsch.ly"
-    \version "2.24.3"
+    \version "2.22.1"
 
     \relative c'' {
       <h gis'> <c a'> <d h'>
@@ -121,7 +121,7 @@
 Сексты, из которых состоят именно Am, Dm и E, расположены не очень удобно. Но мы можем воспользоваться гармоническими заменами. Внимательно посмотрим на минорное трезвучие от ре (Dm) и полууменьшённый септаккорд от си (Hm\textsuperscript{7$\flat$5}):
 \begin{lilypond}[quote,fragment,staffsize=26]
   \include "deutsch.ly"
-  \version "2.24.3"
+  \version "2.22.1"
 
   <<
     \new ChordNames { \chordmode {d4:m h:m7.5-} }
@@ -138,7 +138,7 @@ Dm целиком входит в состав Hm\textsuperscript{7$\flat$5}. П
 То же самое мы видим в случае мажорного трезвучия от ми (E) и малого мажорного септаккорда от ми (E\textsuperscript{7}):
 \begin{lilypond}[quote,fragment,staffsize=26]
   \include "deutsch.ly"
-  \version "2.24.3"
+  \version "2.22.1"
 
   <<
   \new ChordNames { \chordmode {e4 e:7} }
@@ -156,4 +156,170 @@ Dm целиком входит в состав Hm\textsuperscript{7$\flat$5}. П
 
 \section{a-moll}
 
+\subsection*{Am}
+
+\begin{multicols}{2}
+
+  \begin{lilypond}[quote,fragment,staffsize=26]
+    \include "deutsch.ly"
+    \version "2.22.1"
+
+    \relative c'' {
+      <c a'> <d h'> <e c'>
+    }
+  \end{lilypond}
+
+  \begin{turn}{90}
+    \chords{
+      \mediumchords
+      \def\numfrets{12}
+      \chord{}{x,x,x,p5p7p9,x,p5p7p8}{}
+    }
+  \end{turn}
+\end{multicols}
+
+\subsection*{Hm\textsuperscript{$\flat$5}}
+\begin{multicols}{2}
+
+  \begin{lilypond}[quote,fragment,staffsize=26]
+    \include "deutsch.ly"
+    \version "2.22.1"
+
+    \relative c'' {
+      <d h'> <e c'> <f d'>
+    }
+  \end{lilypond}
+
+  \begin{turn}{90}
+    \chords{
+      \mediumchords
+      \def\numfrets{12}
+      \chord{}{x,x,x,p7p9p{10},x,p7p8p{10}}{}
+    }
+  \end{turn}
+\end{multicols}
+
+\subsection*{C}
+\begin{multicols}{2}
+
+  \begin{lilypond}[quote,fragment,staffsize=26]
+    \include "deutsch.ly"
+    \version "2.22.1"
+
+    \relative c'' {
+      <e c'> <f d'> <g e'>
+    }
+  \end{lilypond}
+
+  \begin{turn}{90}
+    \chords{
+      \mediumchords
+      \def\numfrets{12}
+      \chord{}{x,x,x,p9p{10}p{12},x,p8p{10}p{12}}{}
+    }
+  \end{turn}
+\end{multicols}
+
+\subsection*{Dm}
+\begin{multicols}{2}
+
+  \begin{lilypond}[quote,fragment,staffsize=26]
+    \include "deutsch.ly"
+    \version "2.22.1"
+
+    \relative c'' {
+      <f d'> <g e'> <a f'>
+    }
+  \end{lilypond}
+  \begin{turn}{90}
+    \chords{
+      \mediumchords
+      \def\numfrets{14}
+      \chord{}{x,x,x,p{10}p{12}p{14},x,p{10}p{12}p{13}}{}
+    }
+  \end{turn}
+\end{multicols}
+
+\subsection*{E}
+\begin{multicols}{2}
+  \begin{lilypond}[quote,fragment,staffsize=26]
+    \include "deutsch.ly"
+    \version "2.22.1"
+
+    \relative c'' {
+      <gis e'> <a f'> <h gis'>
+    }
+  \end{lilypond}
+  \begin{turn}{90}
+    \chords{
+      \mediumchords
+      \def\numfrets{12}
+      \chord{}{x,x,x,p1p2p4,x,p0p1p4}{}
+    }
+  \end{turn}
+\end{multicols}
+
+
+
+\subsection*{Em}
+\begin{multicols}{2}
+
+  \begin{lilypond}[quote,fragment,staffsize=26]
+    \include "deutsch.ly"
+    \version "2.22.1"
+
+    \relative c'' {
+      <g e'> <a f'> <h g'>
+    }
+  \end{lilypond}
+  \begin{turn}{90}
+    \chords{
+      \mediumchords
+      \def\numfrets{12}
+      \chord{}{x,x,x,p0p2p4,x,p0p1p3}{}
+    }
+  \end{turn}
+\end{multicols}
+
+\subsection*{F}
+\begin{multicols}{2}
+
+  \begin{lilypond}[quote,fragment,staffsize=26]
+    \include "deutsch.ly"
+    \version "2.22.1"
+
+    \relative c'' {
+      <a f'> <h g'> <c a'>
+    }
+  \end{lilypond}
+
+  \begin{turn}{90}
+    \chords{
+      \mediumchords
+      \def\numfrets{12}
+      \chord{}{x,x,x,p2p4p5,x,p1p3p5}{}
+    }
+  \end{turn}
+\end{multicols}
+
+\subsection*{G}
+\begin{multicols}{2}
+
+  \begin{lilypond}[quote,fragment,staffsize=26]
+    \include "deutsch.ly"
+    \version "2.22.1"
+
+    \relative c'' {
+      <d h'> <e c'> <f d'>
+    }
+  \end{lilypond}
+
+  \begin{turn}{90}
+    \chords{
+      \mediumchords
+      \def\numfrets{12}
+      \chord{}{x,x,x,p4p5p7,x,p3p5p7}{}
+    }
+  \end{turn}
+\end{multicols}
 \end{document}
